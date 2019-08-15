@@ -1,0 +1,20 @@
+== Front Panel ==
+ - Mains power switch
+ - Mains power indicator
+ - 15 V indicator
+ - 5 V indicator
+ - 3.3 V indicator
+ - GPS PPS indicator
+ - Rubidium PPS indicator
+ - Rubidium lock indicator
+ - GPS lock indicator
+ - Rubidium power switch (on/auto/off)
+ - Network indicator
+ -Overtemp indicator
+
+== Back Panel ==
+ - Power in 
+ - Network
+ - IRIG output
+ - PPS output
+ - 10 MHz output? 
