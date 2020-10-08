@@ -4,17 +4,37 @@
  - 15 V indicator
  - 5 V indicator
  - 3.3 V indicator
+ - 12 V indicator
+ - 24 V indicator
  - GPS PPS indicator
  - Rubidium PPS indicator
  - Rubidium lock indicator
  - GPS lock indicator
  - Rubidium power switch (on/auto/off)
  - Network indicator
- -Overtemp indicator
+ - PPS selector
 
 == Back Panel ==
  - Power in 
  - Network
  - IRIG output
  - PPS output
- - 10 MHz output? 
+ - 10 MHz output
+ 
+== Things Needed ==
+ - Rubidium osc
+ - GPS receiver
+ - Computer
+ - 15V PS
+ - 5V PS
+ - 3.3V PS
+ - 24V PS
+ - 12V PS
+ 
+ 
+ - Precision time and frequency reference: GPS
+ - Precision frequency reference: Rubidium
+ 
+ - Outputs: NTP, 10 MHz, PPS, IRIG B122
+ - If GPS fails, rubidium can be used as backup frequency reference
+ - Frequency reference disciplines 10 MHz oscillator
