@@ -1,20 +1,43 @@
+When available, GPS is the best possible frequency source
+
 == Front Panel ==
+=== System ===
  - Mains power switch
  - Mains power indicator
  - 15 V indicator
  - 5 V indicator
  - 3.3 V indicator
- - GPS PPS indicator
- - Rubidium PPS indicator
- - Rubidium lock indicator
- - GPS lock indicator
- - Rubidium power switch (on/auto/off)
- - Network indicator
- -Overtemp indicator
-
+ - Network-A indicator
+ - Network-B indicator
+ - LCD screen?
+ - CLK-A serial
+ - CLK-B serial
+ - Fault indicator
+ 
+=== GPS ===
+ - GDO-A PPS indicator
+ - GDO-B PPS indicator
+ - GDO-A lock indicator
+ - GDO-B lock indicator
+ - GDO-A fault indicator
+ - GDO-B fault indicator
+ 
+=== Rubidium ===
+ - RBO-A PPS indicator
+ - RBO-B PPS indicator
+ - RBO-A lock indicator
+ - RBO-B lock indicator
+ - RBO-A power switch
+ - RBO-B power switch
+ - RBO-A fault indicator
+ - RBO-B fault indicator
+ 
 == Back Panel ==
  - Power in 
- - Network
+ - Network A
+ - Network B
  - IRIG output
  - PPS output
- - 10 MHz output? 
+ - 10 MHz output
+ - GPS-A input
+ - GPS-B input
