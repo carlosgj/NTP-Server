@@ -16,12 +16,6 @@ When available, GPS is the best possible frequency source
  - PPS selector
  
 === GPS ===
- - GPS PPS indicator
- - Rubidium PPS indicator
- - Rubidium lock indicator
- - GPS lock indicator
- - Rubidium power switch (on/auto/off)
- - Network indicator
  - GDO-A PPS indicator
  - GDO-B PPS indicator
  - GDO-A lock indicator
@@ -38,6 +32,9 @@ When available, GPS is the best possible frequency source
  - RBO-B power switch (on/auto/off)
  - RBO-A fault indicator
  - RBO-B fault indicator
+ 
+=== OCXO ===
+ - Oven-heating indicator
  
 == Back Panel ==
  - Power in 
