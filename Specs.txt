@@ -43,6 +43,7 @@ When available, GPS is the best possible frequency source
  - IRIG output
  - PPS output
  - 10 MHz output
+ - 1 Hz square wave output
  - GPS-A input
  - GPS-B input
  
