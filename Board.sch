@@ -10373,6 +10373,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="resistor" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="SUPPLY44" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY45" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY46" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY47" library="supply2" deviceset="+5V" device=""/>
+<part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY49" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
+<part name="U$8" library="FRC696" deviceset="MIC5014" device=""/>
+<part name="Q5" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-FDD8780" value="35A/25V/8.5mΩ"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C1206" value="10uF"/>
+<part name="SUPPLY52" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY53" library="supply2" deviceset="+24V" device=""/>
+<part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY55" library="supply2" deviceset="GND" device=""/>
+<part name="PPSOUT1" library="con-coax" deviceset="BU-SMA-V" device=""/>
+<part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10880,6 +10895,19 @@ PPS Management</description>
 <instance part="SUPPLY40" gate="GND" x="53.34" y="50.8"/>
 <instance part="SUPPLY41" gate="+24V" x="73.66" y="83.82"/>
 <instance part="CRYSTAL" gate="-1" x="20.32" y="25.4"/>
+<instance part="SUPPLY48" gate="GND" x="27.94" y="10.16"/>
+<instance part="SUPPLY49" gate="GND" x="12.7" y="7.62"/>
+<instance part="SUPPLY50" gate="GND" x="0" y="33.02" rot="R270"/>
+<instance part="SUPPLY51" gate="GND" x="127" y="73.66"/>
+<instance part="U$8" gate="G$1" x="139.7" y="78.74"/>
+<instance part="Q5" gate="NMOS" x="177.8" y="81.28"/>
+<instance part="C7" gate="G$1" x="160.02" y="66.04"/>
+<instance part="SUPPLY52" gate="GND" x="160.02" y="58.42"/>
+<instance part="SUPPLY53" gate="+24V" x="180.34" y="91.44"/>
+<instance part="SUPPLY54" gate="GND" x="30.48" y="40.64" rot="R90"/>
+<instance part="SUPPLY55" gate="GND" x="30.48" y="33.02" rot="R90"/>
+<instance part="PPSOUT1" gate="G$1" x="-2.54" y="50.8"/>
+<instance part="SUPPLY56" gate="GND" x="0" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -10896,6 +10924,54 @@ PPS Management</description>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="24"/>
+<pinref part="CRYSTAL" gate="-1" pin="25"/>
+<wire x1="27.94" y1="15.24" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="SUPPLY48" gate="GND" pin="GND"/>
+<junction x="27.94" y="12.7"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="12"/>
+<pinref part="CRYSTAL" gate="-1" pin="13"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SUPPLY49" gate="GND" pin="GND"/>
+<junction x="12.7" y="10.16"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="3"/>
+<pinref part="CRYSTAL" gate="-1" pin="4"/>
+<wire x1="12.7" y1="35.56" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
+<junction x="12.7" y="33.02"/>
+<pinref part="SUPPLY50" gate="GND" pin="GND"/>
+<pinref part="CRYSTAL" gate="-1" pin="2"/>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
+<junction x="12.7" y="35.56"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY51" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="SUPPLY52" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="14"/>
+<pinref part="SUPPLY54" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="17"/>
+<pinref part="SUPPLY55" gate="GND" pin="GND"/>
+<pinref part="CRYSTAL" gate="-1" pin="16"/>
+<wire x1="27.94" y1="35.56" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<junction x="27.94" y="33.02"/>
+</segment>
+<segment>
+<pinref part="PPSOUT1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY56" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -10935,6 +11011,22 @@ PPS Management</description>
 <wire x1="78.74" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
 <junction x="81.28" y="63.5"/>
 </segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="10"/>
+<pinref part="CRYSTAL" gate="-1" pin="11"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
+<junction x="12.7" y="17.78"/>
+<label x="7.62" y="17.78" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="22"/>
+<pinref part="CRYSTAL" gate="-1" pin="23"/>
+<wire x1="27.94" y1="20.32" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="17.78"/>
+<wire x1="27.94" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
+<label x="33.02" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+24V" class="0">
 <segment>
@@ -10949,6 +11041,89 @@ PPS Management</description>
 <wire x1="53.34" y1="60.96" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
 <junction x="53.34" y="78.74"/>
 <pinref part="SUPPLY41" gate="+24V" pin="+24V"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="NMOS" pin="D"/>
+<wire x1="180.34" y1="88.9" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="V+"/>
+<wire x1="154.94" y1="83.82" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<junction x="180.34" y="86.36"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="68.58" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<junction x="160.02" y="86.36"/>
+<pinref part="SUPPLY53" gate="+24V" pin="+24V"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="GATE"/>
+<wire x1="154.94" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="NMOS" pin="G"/>
+</segment>
+</net>
+<net name="CRYSTAL_LOGIC" class="0">
+<segment>
+<label x="198.12" y="71.12" size="1.778" layer="95"/>
+<wire x1="180.34" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="NMOS" pin="S"/>
+<wire x1="180.34" y1="76.2" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="SOURCE"/>
+<wire x1="180.34" y1="73.66" x2="180.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="73.66" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
+<junction x="180.34" y="73.66"/>
+</segment>
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="15"/>
+<wire x1="27.94" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
+<label x="33.02" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CRYSTAL_EFC" class="0">
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="5"/>
+<wire x1="12.7" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="10.16" y="30.48" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="CRYSTAL_OVEN_MON" class="0">
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="9"/>
+<wire x1="12.7" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
+<label x="7.62" y="20.32" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="CRYSTAL_OUT" class="0">
+<segment>
+<pinref part="CRYSTAL" gate="-1" pin="1"/>
+<wire x1="12.7" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<label x="7.62" y="40.64" size="1.778" layer="95" rot="R180"/>
+<pinref part="PPSOUT1" gate="G$1" pin="1"/>
+<wire x1="0" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="50.8" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<junction x="12.7" y="40.64"/>
+</segment>
+</net>
+<net name="CRYSTAL_HEAT_IMON" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VOUT"/>
+<wire x1="76.2" y1="35.56" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<label x="76.2" y="27.94" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="CRYSTAL_HEAT_EN" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="INPUT"/>
+<wire x1="20.32" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="12.7" y="73.66" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="CRYSTAL_LOGIC_EN" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="INPUT"/>
+<wire x1="127" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<label x="119.38" y="81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
@@ -10989,10 +11164,48 @@ PPS Management</description>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="53.34" y="58.42"/>
+<instance part="SUPPLY46" gate="GND" x="38.1" y="25.4"/>
+<instance part="SUPPLY47" gate="+5V" x="38.1" y="86.36"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="GND@39"/>
+<pinref part="SUPPLY46" gate="GND" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="GND@34"/>
+<wire x1="38.1" y1="30.48" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<junction x="38.1" y="27.94"/>
+<pinref part="J1" gate="G$1" pin="GND@30"/>
+<wire x1="38.1" y1="33.02" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
+<junction x="38.1" y="30.48"/>
+<pinref part="J1" gate="G$1" pin="GND@25"/>
+<wire x1="38.1" y1="35.56" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<junction x="38.1" y="33.02"/>
+<pinref part="J1" gate="G$1" pin="GND@20"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<junction x="38.1" y="35.56"/>
+<pinref part="J1" gate="G$1" pin="GND@14"/>
+<wire x1="38.1" y1="40.64" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<junction x="38.1" y="38.1"/>
+<pinref part="J1" gate="G$1" pin="GND@9"/>
+<wire x1="38.1" y1="43.18" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<junction x="38.1" y="40.64"/>
+<pinref part="J1" gate="G$1" pin="GND@6"/>
+<wire x1="38.1" y1="45.72" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<junction x="38.1" y="43.18"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5V@2"/>
+<pinref part="J1" gate="G$1" pin="5V@4"/>
+<wire x1="38.1" y1="83.82" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SUPPLY47" gate="+5V" pin="+5V"/>
+<junction x="38.1" y="83.82"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
